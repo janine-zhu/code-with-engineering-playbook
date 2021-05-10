@@ -10,8 +10,9 @@ Note that this is just a starting point to enable planning discussions. We expec
 
 ## Benefits
 
-- As you complete the assessment, you can push back on the scope, time frame or ask for more resources. 
-- As you progress in your project/product delivery, you can highlight risks to the scope, time frame, and resources. 
+- As you complete the assessment, you can push back on the scope, time frame or ask for more resources.
+
+- As you progress in your project/product delivery, you can highlight risks to the scope, time frame, and resources.
 
 ## Approach
 
