@@ -13,14 +13,14 @@
         <meta name="author" content="Microsoft CSE">
       
       
-        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/credential-scanning/recipes/detect-secrets-ado/">
+        <link rel="canonical" href="https://microsoft.github.io/code-with-engineering-playbook/continuous-integration/dev-sec-ops/secret-management/credential_scanning/">
       
       <link rel="icon" href="../../../../resources/ms_icon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
     
     
       
-        <title>Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets - Code With Engineering Playbook</title>
+        <title>Credential Scanning - Code With Engineering Playbook</title>
       
     
     
@@ -69,7 +69,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#detecting-secrets-in-your-azure-devops-pipeline-with-yelp-detect-secrets" class="md-skip">
+        <a href="#credential-scanning" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+              Credential Scanning
             
           </span>
         </div>
@@ -2079,13 +2079,13 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3" type="checkbox" id="__nav_9_3" checked>
       
       <label class="md-nav__link" for="__nav_9_3">
-        Credential scanning
+        Dev sec ops
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Credential scanning" data-md-level="2">
+      <nav class="md-nav" aria-label="Dev sec ops" data-md-level="2">
         <label class="md-nav__title" for="__nav_9_3">
           <span class="md-nav__icon md-icon"></span>
-          Credential scanning
+          Dev sec ops
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2095,8 +2095,86 @@
   
     <li class="md-nav__item">
       <a href="../../" class="md-nav__link">
-        Credential Scanning
+        DevSecOps
       </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_2" type="checkbox" id="__nav_9_3_2" >
+      
+      <label class="md-nav__link" for="__nav_9_3_2">
+        Dependency container scanning
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Dependency container scanning" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Dependency container scanning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../dependency-container-scanning/dependency_container_scanning/" class="md-nav__link">
+        Dependency and Container Scanning
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_3" type="checkbox" id="__nav_9_3_3" >
+      
+      <label class="md-nav__link" for="__nav_9_3_3">
+        Penetration testing
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Penetration testing" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Penetration testing
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../penetration-testing/penetration_testing/" class="md-nav__link">
+        Penetration Testing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -2111,16 +2189,16 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_2" type="checkbox" id="__nav_9_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_4" type="checkbox" id="__nav_9_3_4" checked>
       
-      <label class="md-nav__link" for="__nav_9_3_2">
-        Recipes
+      <label class="md-nav__link" for="__nav_9_3_4">
+        Secret management
         <span class="md-nav__icon md-icon"></span>
       </label>
-      <nav class="md-nav" aria-label="Recipes" data-md-level="3">
-        <label class="md-nav__title" for="__nav_9_3_2">
+      <nav class="md-nav" aria-label="Secret management" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_4">
           <span class="md-nav__icon md-icon"></span>
-          Recipes
+          Secret management
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -2138,12 +2216,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+          Credential Scanning
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+        Credential Scanning
       </a>
       
         
@@ -2160,22 +2238,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#why-credential-scanning" class="md-nav__link">
+    Why Credential scanning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-devops-pipeline" class="md-nav__link">
-    Azure DevOps Pipeline
+  <a href="#applying-credential-scanning" class="md-nav__link">
+    Applying Credential Scanning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-plugin-example" class="md-nav__link">
-    Custom plugin example
+  <a href="#credential-scanning-frameworks-and-tools" class="md-nav__link">
+    Credential Scanning Frameworks and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -2193,8 +2278,98 @@
   
   
     <li class="md-nav__item">
-      <a href="../detect-secrets/" class="md-nav__link">
+      <a href="../secrets_rotation/" class="md-nav__link">
+        Secrets Rotation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_4_3" type="checkbox" id="__nav_9_3_4_3" >
+      
+      <label class="md-nav__link" for="__nav_9_3_4_3">
+        Recipes
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Recipes" data-md-level="4">
+        <label class="md-nav__title" for="__nav_9_3_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Recipes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recipes/detect-secrets-ado/" class="md-nav__link">
+        Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../recipes/detect-secrets/" class="md-nav__link">
         Credential Scanning Tool: detect-secrets
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9_3_5" type="checkbox" id="__nav_9_3_5" >
+      
+      <label class="md-nav__link" for="__nav_9_3_5">
+        Static code analysis
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Static code analysis" data-md-level="3">
+        <label class="md-nav__title" for="__nav_9_3_5">
+          <span class="md-nav__icon md-icon"></span>
+          Static code analysis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../static-code-analysis/static_code_analysis/" class="md-nav__link">
+        Static Code Analysis
       </a>
     </li>
   
@@ -3309,6 +3484,18 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../../observability/microservices/" class="md-nav__link">
+        Observability in Microservices
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../../observability/ml-observability/" class="md-nav__link">
         Observability in Machine Learning
       </a>
@@ -3384,14 +3571,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_12" type="checkbox" id="__nav_16_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_13" type="checkbox" id="__nav_16_13" >
       
-      <label class="md-nav__link" for="__nav_16_12">
+      <label class="md-nav__link" for="__nav_16_13">
         Pillars
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Pillars" data-md-level="2">
-        <label class="md-nav__title" for="__nav_16_12">
+        <label class="md-nav__title" for="__nav_16_13">
           <span class="md-nav__icon md-icon"></span>
           Pillars
         </label>
@@ -3459,14 +3646,14 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_13" type="checkbox" id="__nav_16_13" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_14" type="checkbox" id="__nav_16_14" >
       
-      <label class="md-nav__link" for="__nav_16_13">
+      <label class="md-nav__link" for="__nav_16_14">
         Tools
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Tools" data-md-level="2">
-        <label class="md-nav__title" for="__nav_16_13">
+        <label class="md-nav__title" for="__nav_16_14">
           <span class="md-nav__icon md-icon"></span>
           Tools
         </label>
@@ -3887,22 +4074,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
+  <a href="#why-credential-scanning" class="md-nav__link">
+    Why Credential scanning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#azure-devops-pipeline" class="md-nav__link">
-    Azure DevOps Pipeline
+  <a href="#applying-credential-scanning" class="md-nav__link">
+    Applying Credential Scanning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-plugin-example" class="md-nav__link">
-    Custom plugin example
+  <a href="#credential-scanning-frameworks-and-tools" class="md-nav__link">
+    Credential Scanning Frameworks and Tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
   </a>
   
 </li>
@@ -3920,98 +4114,36 @@
               
                 
                 
-                <h1 id="detecting-secrets-in-your-azure-devops-pipeline-with-yelp-detect-secrets">Detecting Secrets in your Azure DevOps Pipeline with YELP detect-secrets</h1>
-<h2 id="overview">Overview</h2>
-<p>In this article, you can find information on how to integrate YELP detect-secrets into your Azure DevOps Pipeline. The proposed code can be part of the classic CI process or (preferred way) build validation for PRs before merging to the main branch.</p>
-<h2 id="azure-devops-pipeline">Azure DevOps Pipeline</h2>
-<p>Proposed Azure DevOps Pipeline contains multiple steps described below:</p>
+                <h1 id="credential-scanning">Credential Scanning</h1>
+<p>Credential scanning is the practice of automatically inspecting a project to ensure that no secrets are included in the project's source code. Secrets include database passwords, storage connection strings, admin logins, service principals, etc.</p>
+<h2 id="why-credential-scanning">Why Credential scanning</h2>
+<p>Including secrets in a project's source code is a significant risk, as it might make those secrets available to unwanted parties. Even if it seems that the source code is accessible to the same people who are privy to the secrets, this situation is likely to change as the project grows. Spreading secrets in different places makes them harder to manage, access control, and revoke efficiently. Secrets that are committed to source control are also harder to discard of, since they will persist in the source's history.<br />
+Another consideration is that coupling the project's code to its infrastructure and deployment specifics is limiting and considered a bad practice. From a software design perspective, the code should be independent of the runtime configuration that will be used to run it, and that runtime configuration includes secrets.
+ As such, there should be a clear boundary between code and secrets: secrets should be managed outside of the source code (read more <a href="../../../../continuous-delivery/secrets-management/">here</a>) and credential scanning should be employed to ensure that this boundary is never violated.</p>
+<h2 id="applying-credential-scanning">Applying Credential Scanning</h2>
+<p>Ideally, credential scanning should be run as part of a developer's workflow (e.g. via a <a href="https://githooks.com">git pre-commit hook</a>), however, to protect against developer error, credential scanning must also be enforced as part of the continuous integration process to ensure that no credentials ever get merged to a project's main branch.
+To implement credential scanning for a project, consider the  following:</p>
 <ol>
-<li>Set Python 3 as default</li>
-<li>Install detect-secrets using pip</li>
-<li>Run detect-secrets tool<blockquote>
-<p>NOTE: In this example, the tool gets additional parameters. The most important is <code>--custom-plugins</code>, which points to the custom plugin for Azure Storage Account Key detection.
-This plugin is not part of the official YELP detect-secrets yet, so you have to provide it in your codebase. Reference code you can find under the <a href="#custom-plugin-example">Custom plugin example</a> section.</p>
-</blockquote>
-</li>
-<li>Publish results in the Pipeline Artifact<blockquote>
-<p>NOTE: It's an optional step, but for future investigation .json file with results may be helpful.</p>
-</blockquote>
-</li>
-<li>Analyzing detect-secrets results<blockquote>
-<p>NOTE: This step does a simple analysis of the .json file. If any secret has been detected, then break the build.</p>
-</blockquote>
-</li>
+<li>Store secrets in an external secure store that is meant to store sensitive information</li>
+<li>Use secrets scanning tools to asses your repositories current state by scanning it's full history for secrets</li>
+<li>Incorporate an automated secrets scanning tool into your CI pipeline to detect unintentional commiting of secrets</li>
+<li>Avoid <code>git add .</code> commands on git</li>
+<li>Add sensitive files to .gitignore</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nt">trigger</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">none</span>
-
-<span class="nt">pool</span><span class="p">:</span>
-  <span class="nt">vmImage</span><span class="p">:</span> <span class="s">&quot;windows-latest&quot;</span>
-
-<span class="nt">steps</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">UsePythonVersion@0</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Set</span><span class="nv"> </span><span class="s">Python</span><span class="nv"> </span><span class="s">3</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">default&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">versionSpec</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">3</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CmdLine@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Install</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">using</span><span class="nv"> </span><span class="s">pip&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">pip install detect-secrets</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">CmdLine@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Run</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">tool&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">detect-secrets scan --exclude-files &quot;src\\Web\\wwwroot\\lib\\*&quot; --use-all-plugins --custom-plugins yelp\azure_storage_key.py &gt; detect-secrets.json</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PublishPipelineArtifact@1</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Publish</span><span class="nv"> </span><span class="s">results</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Pipeline</span><span class="nv"> </span><span class="s">Artifact&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">targetPath</span><span class="p">:</span> <span class="s">&quot;$(Pipeline.Workspace)/detect-secrets.json&quot;</span>
-      <span class="nt">artifact</span><span class="p">:</span> <span class="s">&quot;detect-secrets&quot;</span>
-      <span class="nt">publishLocation</span><span class="p">:</span> <span class="s">&quot;pipeline&quot;</span>
-
-  <span class="p p-Indicator">-</span> <span class="nt">task</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">PowerShell@2</span>
-    <span class="nt">displayName</span><span class="p">:</span> <span class="s">&quot;Analyzing</span><span class="nv"> </span><span class="s">detect-secrets</span><span class="nv"> </span><span class="s">results&quot;</span>
-    <span class="nt">inputs</span><span class="p">:</span>
-      <span class="nt">targetType</span><span class="p">:</span> <span class="s">&quot;inline&quot;</span>
-      <span class="nt">script</span><span class="p">:</span> <span class="p p-Indicator">|</span>
-        <span class="no">$ds = Get-Content detect-secrets.json</span>
-        <span class="no">Write-Output $ds</span>
-
-        <span class="no">$dsObj = $ds | ConvertFrom-Json</span>
-        <span class="no">$num = ($dsObj.results | Get-Member -MemberType NoteProperty).Count</span>
-
-        <span class="no">if ($num -gt 0) {</span>
-          <span class="no">Write-Host &quot;##vso[task.logissue type=error]Secrets were detected in code.&quot;</span>
-          <span class="no">exit 1</span>
-        <span class="no">}</span>
-        <span class="no">else {</span>
-          <span class="no">Write-Host &quot;No secrets detected.&quot;</span>
-        <span class="no">}</span>
-      <span class="nt">pwsh</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-</code></pre></div>
-<h2 id="custom-plugin-example">Custom plugin example</h2>
-<p>The below example contains a custom plugin for YELP detect-secrets. This plugin is a Detector for Azure Storage Account access keys.</p>
-<div class="highlight"><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">This plugin searches for Azure Storage Account access keys.</span>
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="kn">import</span> <span class="nn">re</span>
-
-
-<span class="kn">from</span> <span class="nn">detect_secrets.plugins.base</span> <span class="kn">import</span> <span class="n">RegexBasedDetector</span>
-
-
-<span class="k">class</span> <span class="nc">AzureStorageKeyDetector</span><span class="p">(</span><span class="n">RegexBasedDetector</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Scans for Azure Storage Account access keys.&quot;&quot;&quot;</span>
-    <span class="n">secret_type</span> <span class="o">=</span> <span class="s1">&#39;Azure Storage Account access key&#39;</span>
-
-    <span class="n">denylist</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;AccountKey=[a-zA-Z0-9+\/=]</span><span class="si">{88}</span><span class="s1">&#39;</span><span class="p">),</span>
-    <span class="p">]</span>
-</code></pre></div>
+<h2 id="credential-scanning-frameworks-and-tools">Credential Scanning Frameworks and Tools</h2>
+<p>Recipes and Scenarios-</p>
+<ol>
+<li><a href="../recipes/detect-secrets/">Detect-secrets</a> - detect-secrets is an aptly named module for detecting secrets within a code base.</li>
+<li><a href="../recipes/detect-secrets-ado/">detect-secrets inside Azure DevOps Pipeline</a></li>
+<li><a href="https://docs.microsoft.com/en-us/azure/security/develop/security-code-analysis-overview">Microsoft Security Code Analysis extension</a></li>
+</ol>
+<p>Additional Tools -</p>
+<ol>
+<li><a href="https://securitylab.github.com/tools/codeql">CodeQL</a>  – Github security. CodeQL lets you query code as if it was data. Write a query to find all variants of a vulnerability</li>
+<li><a href="https://github.com/awslabs/git-secrets">Git-secrets</a>  - Prevents you from committing passwords and other sensitive information to a git repository.</li>
+</ol>
+<h2 id="conclusion">Conclusion</h2>
+<p>Secret management is essential to every project. Storing secrets in external secrets store and incorporating this mindset into your workflow will improve your security posture and will result in cleaner code.</p>
                 
               
               
@@ -4030,7 +4162,7 @@ This plugin is not part of the official YELP detect-secrets yet, so you have to 
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../../" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../../penetration-testing/penetration_testing/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -4039,19 +4171,19 @@ This plugin is not part of the official YELP detect-secrets yet, so you have to 
               <span class="md-footer__direction">
                 Previous
               </span>
-              Credential Scanning
+              Penetration Testing
             </div>
           </div>
         </a>
       
       
-        <a href="../detect-secrets/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../secrets_rotation/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Credential Scanning Tool: detect-secrets
+              Secrets Rotation
             </div>
           </div>
           <div class="md-footer__button md-icon">
